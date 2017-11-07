@@ -1,0 +1,71 @@
+{
+  "name": "next-sample",
+  "version": "0.0.2",
+  "description": "Sample to make fast-sass-loader work.",
+  "scripts": {
+    "dev": "node server.express.js",
+    "export": "next export",
+    "build": "next build",
+    "heroku-postinstall": "yarn build",
+    "start": "NODE_ENV=production node server.express.js",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write './{components,pages}/**/*.js'"
+  },
+  "engines": {
+    "node": "9.x.x"
+  },
+  "author": "Thomas Osmonson <hello@ineffable.co>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-module-resolver": "2.5.0",
+    "babel-plugin-transform-define": "^1.3.0",
+    "babel-plugin-wrap-in-js": "^1.1.0",
+    "babel-preset-react-optimize": "^1.0.1",
+    "css-hot-loader": "^1.3.2",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fast-sass-loader": "^1.4.0",
+    "flickity": "2.0.10",
+    "glob": "7.1.1",
+    "include-media": "^1.4.9",
+    "intersection-observer": "^0.4.2",
+    "lozad": "^1.0.2",
+    "lru-cache": "^4.1.1",
+    "module-alias": "^2.0.1",
+    "next": "^4.1.4-canary.2",
+    "next-redux-wrapper": "^1.3.4",
+    "next-routes": "^1.0.40",
+    "node-sass": "^4.5.3",
+    "normalize.css": "5.0.0",
+    "path-match": "^1.2.4",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-easy-import": "2.0.0",
+    "postcss-loader": "^2.0.8",
+    "prismic-dom": "^2.0.1",
+    "prismic-javascript": "^1.3.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-flickity-component": "^1.1.0",
+    "react-ga": "^2.3.3",
+    "react-redux": "^5.0.6",
+    "react-universal-component": "^2.5.5",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "sass-loader": "^6.0.6",
+    "shortid": "^2.2.8",
+    "style-loader": "^0.19.0",
+    "styled-jsx-plugin-sass": "^0.2.0",
+    "sw-precache-webpack-plugin": "^0.11.4",
+    "webpack-flush-chunks": "^1.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.7.4"
+  },
+  "now": {
+    "alias": "next-sample.ineffable.digital"
+  }
+}

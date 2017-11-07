@@ -1,0 +1,16 @@
+//@import "components/component.scss";
+
+.page {
+  $c: &;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #{$c}__wrapper {
+    font-family:sans-serif;
+    max-width: 800px;
+    h1 {
+      color: $color;
+    }
+  }
+}

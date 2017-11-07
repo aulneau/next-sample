@@ -1,0 +1,36 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "react-optimize"
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "components": "./components",
+          "static": "./static",
+          "store": "./store",
+          "assets": "./assets"
+        }
+      },
+      "wrap-in-js",
+      {
+        "extensions": [
+          "css$",
+          "scss$"
+        ]
+      }
+    ]
+  ],
+  "ignore": []
+}
